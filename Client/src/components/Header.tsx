@@ -9,7 +9,7 @@ export function HeaderComponent<T extends RouterParameter>(arg: T): React.ReactE
     const dispatch = useDispatch();
 
     async function showValue() {
-        let a = await axios.post("http://localhost:3000/readText", arg.editorRef.current.getValue(), {
+        let a = await axios.post("http://203.240.133.185:3000/readText", arg.editorRef.current.getValue(), {
             headers: { "Content-Type": "text/plain" },
         });
         alert(JSON.stringify(a.data));
