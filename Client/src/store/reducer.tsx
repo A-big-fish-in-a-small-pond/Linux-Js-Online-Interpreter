@@ -1,16 +1,16 @@
-import { combineReducers, Reducer } from "redux";
+import { combineReducers } from "redux";
 import storageSession from "redux-persist/lib/storage/session";
 import { persistReducer } from "redux-persist";
-import counter from "./counter";
+import login from "./login";
 
 const persistConfig = {
     key: "root",
     storage: storageSession,
-    whitelist: ["counter"],
+    whitelist: ["login"],
     // blacklist -> 그것만 제외합니다
 };
 
-export default function reducer(): Reducer {
-    const rootReducer = combineReducers({ counter });
+export default function reducer() {
+    const rootReducer = combineReducers({ login });
     return persistReducer(persistConfig, rootReducer);
 }

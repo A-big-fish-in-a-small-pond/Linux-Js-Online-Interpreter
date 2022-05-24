@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import "./asset/css/styled.css";
 
 /** reducer 와 관련된 설정들을 임포트 */
 import { BrowserRouter } from "react-router-dom";
