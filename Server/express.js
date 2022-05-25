@@ -10,6 +10,18 @@ import cors from "cors";
 // var routeError = require("./router/error.js");
 // var cors = require("cors");
 
+////////////////////////////////////////////
+app.io = require("socket.io")();
+
+socket.on("chat-msg-1", (msg) => {
+    app.io.emit("chat-msg-2", msg);
+});
+
+socket.on("disconnect", () => {
+    console.log("socket disconnect !");
+});
+
+/////////////////////////////////////////////
 const app = express();
 app.use(bodyParser.text());
 app.use(bodyParser.json());
