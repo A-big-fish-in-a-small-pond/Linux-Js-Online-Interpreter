@@ -1,10 +1,27 @@
 .main {
     width: 100%;
     height: 100%;
-
     position: absolute;
+
+    display: flex;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.main-1 {
+    width: 50%;
+    height: 100%;
+
+    position: relative;
     background-color: #1b1e2b;
     color: white;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    border: 4px solid #1b1e2b;
+    border-right: 10px solid #1b1e2b;
 }
 
 .main-header {
@@ -54,6 +71,7 @@
     height: 800px;
     position: relative;
     box-sizing: border-box;
+    margin-bottom: 6px;
 }
 
 .main-editor::after {
@@ -62,6 +80,13 @@
     position: absolute;
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 6px;
     cursor: ns-resize;
+}
+
+.output-editor {
+    width: 100%;
+    height: 10px;
+
+    flex: 1;
 }

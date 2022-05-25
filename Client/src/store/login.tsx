@@ -15,7 +15,7 @@ export function actionLogOut() {
 
 export function asyncActionLogin(param: LoginState): any {
     return async function (dispatch: Function, state: any) {
-        let response = await axios.post("http://203.240.133.185:3000/login", { id: param.id, pw: param.password });
+        let response = await axios.post("http://localhost:3001/login", { id: param.id, pw: param.password });
 
         if (response.data.resultCode === "000") {
             return dispatch(actionLogIn(param));

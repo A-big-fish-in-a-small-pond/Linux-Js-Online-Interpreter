@@ -5,4 +5,6 @@ export interface RouterParameter {
     filename?: string;
     loginState?: LoginState;
     editorRef?: any;
+    outputRef?: any;
+    className?: string;
 }

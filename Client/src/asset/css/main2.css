@@ -1,0 +1,15 @@
+.main-2 {
+    width: 10px;
+    height: 100%;
+
+    position: relative;
+    background-color: #1b1e2b;
+    color: white;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+}

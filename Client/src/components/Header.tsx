@@ -9,14 +9,21 @@ export function HeaderComponent<T extends RouterParameter>(arg: T): React.ReactE
     const dispatch = useDispatch();
 
     async function showValue() {
-        let a = await axios.post("http://203.240.133.185:3000/readText", arg.editorRef.current.getValue(), {
+        let a = await axios.post("http://localhost:3001/readText", arg.editorRef.current.getValue(), {
             headers: { "Content-Type": "text/plain" },
         });
-        alert(JSON.stringify(a.data));
+
+        // arg.editorRef.current.setValue(a.data);
+        if (a.data.resultCode == "000") {
+            arg.outputRef.current.setValue(a.data.result);
+        } else {
+            alert(JSON.stringify(a.data));
+        }
     }
 
     let onClick = () => {
         dispatch(actionLogOut());
+
         alert("로그아웃이 완료되었습니다. ");
     };
 
