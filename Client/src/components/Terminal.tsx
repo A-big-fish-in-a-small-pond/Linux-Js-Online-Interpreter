@@ -63,6 +63,7 @@ export default function TerminalComponent<T extends RouterParameter>(arg: T): Re
             login: loginState ? login : false,
             completion: completion,
             prompt: makePrompt(null),
+            height: $(".main2-terminal").height(),
         });
 
         return () => {};

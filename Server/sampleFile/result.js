@@ -1,2 +1,2 @@
 // 코드를 작성하세요. 
-console.log('hello world')
+console.log("hello world")
