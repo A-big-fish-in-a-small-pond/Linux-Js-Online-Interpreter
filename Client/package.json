@@ -13,6 +13,7 @@
     "@types/react-dom": "^18.0.4",
     "axios": "^0.27.2",
     "jquery": "^3.6.0",
+    "jquery.terminal": "^2.33.3",
     "react": "^18.1.0",
     "react-device-detect": "^2.2.2",
     "react-dom": "^18.1.0",
