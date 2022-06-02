@@ -5,6 +5,7 @@ import { RPCServer } from "./rpc.js";
 
 const router = express.Router();
 
+router.post("/serverConnect", serverConnect);
 router.post("/readText", readText);
 router.post("/login", login);
 router.post("/rpc", RPCServer.middleware());
