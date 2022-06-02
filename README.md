@@ -35,7 +35,7 @@ npm start
 
 ### `Step 1. login with Web Page`
 
-<p><img src="./preview/step1.png" alt="error"></p>
+<p><img src="./preview/step1.PNG" alt="error"></p>
 
 > id: root pw : root <br>
 
@@ -43,7 +43,7 @@ npm start
 
 ### `Step 2. login with Web Console`
 
-<p><img src="./preview/step2.png" alt="error"></p>
+<p><img src="./preview/step2.PNG" alt="error"></p>
 
 > id: anythings pw : anythings <br>
 
@@ -51,7 +51,7 @@ npm start
 
 ### `Step 3. Test using a web console and an editor`
 
-<p><img src="./preview/step3.png" alt="error"></p>
+<p><img src="./preview/step3.PNG" alt="error"></p>
 
 <br>
 
