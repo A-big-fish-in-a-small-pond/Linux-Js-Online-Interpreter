@@ -1,12 +1,13 @@
 import express from "express";
 import readText from "../services/readText.js";
 import login from "../services/login.js";
-import serverConnect from "../services/serverConnect.js";
+import { RPCServer } from "./rpc.js";
 
 const router = express.Router();
 
 router.post("/serverConnect", serverConnect);
 router.post("/readText", readText);
 router.post("/login", login);
+router.post("/rpc", RPCServer.middleware());
 
 export default router;

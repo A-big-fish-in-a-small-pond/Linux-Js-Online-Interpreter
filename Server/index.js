@@ -1,5 +1,5 @@
 import expressApp from "./express.js";
 
-expressApp.listen(3000, () => {
+expressApp.listen(3001, () => {
     console.log("Server Start");
 });

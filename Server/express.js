@@ -4,19 +4,6 @@ import routeHome from "./router/home.js";
 import routeError from "./router/error.js";
 import cors from "cors";
 
-// var express = require("express");
-// var bodyParser = require("bodyParser");
-// var routeHome = require("./router/home.js");
-// var routeError = require("./router/error.js");
-// var cors = require("cors");
-
-////////////////////////////////////////////
-app.io = require("socket.io")();
-
-socket.on("chat-msg-1", (msg) => {
-    app.io.emit("chat-msg-2", msg);
-});
-
 socket.on("disconnect", () => {
     console.log("socket disconnect !");
 });
