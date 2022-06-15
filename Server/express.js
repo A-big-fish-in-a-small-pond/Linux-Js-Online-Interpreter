@@ -4,6 +4,11 @@ import routeHome from "./router/home.js";
 import routeError from "./router/error.js";
 import cors from "cors";
 
+socket.on("disconnect", () => {
+    console.log("socket disconnect !");
+});
+
+/////////////////////////////////////////////
 const app = express();
 app.use(bodyParser.text());
 app.use(bodyParser.json());

@@ -5,12 +5,17 @@ import nodeCmd from 'node-cmd'
 export default async function readText(req, res){
     let text = req.body;
 
-    fs.writeFile('./sampleFile/result.js', text, err => {
+    console.log(text)
+    try{
+      fs.writeFile('./sampleFile/result.js', text, err => {
         if (err) {
           console.error(err);
           console.log("gdgd")
         }
     })
+    }catch(Err){
+      console.log("error : " + Err)
+    }
 
     const obj = {
       result : null,
