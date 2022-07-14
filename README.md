@@ -58,6 +58,7 @@ npm start
 ## HomePage
 
 Github © [Page](https://github.com/A-big-fish-in-a-small-pond/)
+ © [Jihee](https://github.com/hollister8)
 
 ## License
 
